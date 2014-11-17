@@ -1,0 +1,56 @@
+* Z:\Users\Enigmoid\Semester\MADVLSI\Project\vlsi-tunable-amp\ltspice\ampsim.asc
+M8 N009 Vbn 0 0 nfet l=1.8u w=36u
+M9 N006 Vcn N009 0 nfet l=1.8u w=36u
+M10 N005 Vcn N008 0 nfet l=1.8u w=36u
+M11 N008 Vbn 0 0 nfet l=1.8u w=36u
+M12 N009 V+ N004 Vdd pfet l=1.8u w=36u
+M20 N008 V- N004 Vdd pfet l=1.8u w=36u
+M21 N006 Vcp N002 Vdd pfet l=1.8u w=36u
+M22 N002 N001 Vdd Vdd pfet l=1.8u w=36u
+M23 N004 Vbp Vdd Vdd pfet l=1.8u w=36u
+M24 N003 N001 Vdd Vdd pfet l=1.8u w=36u
+M25 N005 Vcp N003 Vdd pfet l=1.8u w=36u
+XX1 Vdd 0 Vbn Vbp Vcn Vcp bias
+V1 Vdd 0 5
+V2 V+ 0 2.5
+V3 V- 0 2.5
+M1 N007 N001 Vdd Vdd pfet l=1.8u w=36u
+M2 Vout N005 Vdd Vdd pfet l=1.8u w=36u
+M3 Vout N007 0 0 nfet l=1.8u w=36u
+M4 N007 N007 0 0 nfet l=1.8u w=36u
+C2 N007 N001 2p
+C3 Vout N005 2p
+R1 N001 N006 1Meg
+R2 N005 N001 1Meg
+
+* block symbol definitions
+.subckt bias Vdd Vss Vbn Vbp Vcn Vcp
+M1 N004 Vbn Vss Vss nfet l=1.8u w=36u
+M2 Vcp Vbn Vss Vss nfet l=1.8u w=36u
+M3 Vbp Vbn N006 Vss nfet l=1.8u w=36u
+M4 Vbn Vbn Vss Vss nfet l=1.8u w=36u
+M5 N009 N008 Vss Vss nfet l=1.8u w=36u
+M6 N008 N008 N009 Vss nfet l=1.8u w=36u m=2
+M7 Vcn Vcn N009 Vss nfet l=1.8u w=36u
+M13 N001 N001 N002 Vdd pfet l=1.8u w=36u m=2
+M14 Vcp Vcp N002 Vdd pfet l=1.8u w=36u
+M15 N002 N001 Vdd Vdd pfet l=1.8u w=36u
+M16 Vbp Vbp Vdd Vdd pfet l=1.8u w=36u
+M17 Vbn Vbp Vdd Vdd pfet l=1.8u w=36u
+M18 N005 Vbp Vdd Vdd pfet l=1.8u w=36u
+M19 Vcn Vbp Vdd Vdd pfet l=1.8u w=36u
+M8 N007 Vbp N005 Vdd pfet l=1.8u w=36u
+M9 N008 Vbp N007 Vdd pfet l=1.8u w=36u
+M10 N003 Vbn N004 Vss nfet l=1.8u w=36u
+M11 N001 Vbn N003 Vss nfet l=1.8u w=36u
+Ib N006 Vss 10µ
+.include engr3426.sub
+.ends bias
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Program Files\LTC\LTspiceIV\lib\cmp\standard.mos
+.include engr3426.sub
+.dc V2 0 5 1e-3
+.backanno
+.end
