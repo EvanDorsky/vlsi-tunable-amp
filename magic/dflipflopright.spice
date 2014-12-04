@@ -1,0 +1,38 @@
+* SPICE3 file created from dflipflopright.ext - technology: scmos
+
+.option scale=0.3u
+
+.global Vdd Gnd
+
+
+* Top level circuit dflipflopright
+
+M1000 Vdd Clk a_2_14# Vdd pfet w=5 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 a_2_14# Q Qbar Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_2_14# Qbar Q Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 Qbar Q Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 Q Qbar Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 Qbar Clk a_n1_n49# Gnd nfet w=3 l=6
++  ad=0 pd=0 as=0 ps=0
+M1006 Q Clk a_n1_n123# Gnd nfet w=3 l=6
++  ad=0 pd=0 as=0 ps=0
+M1007 Dbar Clk a_n1_n49# Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 D Clk a_n1_n123# Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 Vdd a_n1_n123# a_n1_n49# Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 Vdd a_n1_n49# a_n1_n123# Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 a_n1_n49# a_n1_n123# a_2_n127# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 a_n1_n123# a_n1_n49# a_2_n127# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 a_2_n127# Clk Gnd Gnd nfet w=5 l=2
++  ad=0 pd=0 as=0 ps=0
+.end
