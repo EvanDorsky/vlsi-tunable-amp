@@ -1,0 +1,28 @@
+magic
+tech scmos
+timestamp 1417663407
+<< polysilicon >>
+rect -10 155 0 157
+rect -10 100 -8 155
+rect -10 92 0 100
+rect -10 49 -8 92
+rect -10 47 0 49
+rect -10 -8 -8 47
+rect -10 -10 0 -8
+<< polycontact >>
+rect -4 81 0 85
+<< metal1 >>
+rect -11 157 1 161
+rect -11 34 -7 157
+rect -11 30 3 34
+<< m2contact >>
+rect -4 113 0 117
+rect -4 -14 0 -10
+<< metal2 >>
+rect -4 -10 0 113
+use dflipflop  dflipflop_0
+array 0 3 27 0 0 161
+timestamp 1417660989
+transform 1 0 11 0 1 135
+box -11 -150 16 27
+<< end >>
