@@ -1,0 +1,27 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 32 -48 48
+LINE Normal -16 48 -32 32
+RECTANGLE Normal -64 -64 32 48
+WINDOW 0 -16 -64 Bottom 2
+PIN -32 48 NONE 8
+PINATTR PinName Clk
+PINATTR SpiceOrder 1
+PIN -64 -32 LEFT 8
+PINATTR PinName D
+PINATTR SpiceOrder 2
+PIN -64 16 NONE 8
+PINATTR PinName Dbar
+PINATTR SpiceOrder 3
+PIN 0 -64 NONE 8
+PINATTR PinName Vdd
+PINATTR SpiceOrder 4
+PIN 0 48 NONE 8
+PINATTR PinName Vss
+PINATTR SpiceOrder 5
+PIN 32 -32 RIGHT 8
+PINATTR PinName Q
+PINATTR SpiceOrder 6
+PIN 32 16 NONE 8
+PINATTR PinName Qbar
+PINATTR SpiceOrder 7
