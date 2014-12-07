@@ -1,6 +1,30 @@
 magic
 tech scmos
-timestamp 1417663407
+timestamp 1417991843
+<< nwell >>
+rect -5 137 108 168
+rect -5 16 108 40
+<< pwell >>
+rect -5 107 108 131
+rect -5 -21 108 10
+<< psubstratepcontact >>
+rect -2 117 2 121
+rect 25 117 29 121
+rect 52 117 56 121
+rect 79 117 83 121
+rect -2 -7 2 -3
+rect 25 -7 29 -3
+rect 52 -7 56 -3
+rect 79 -7 83 -3
+<< nsubstratencontact >>
+rect -2 150 2 154
+rect 25 150 29 154
+rect 52 150 56 154
+rect 79 150 83 154
+rect -2 26 2 30
+rect 25 26 29 30
+rect 52 26 56 30
+rect 79 26 83 30
 << polysilicon >>
 rect -10 155 0 157
 rect -10 100 -8 155
@@ -12,13 +36,25 @@ rect -10 -10 0 -8
 << polycontact >>
 rect -4 81 0 85
 << metal1 >>
-rect -11 157 1 161
-rect -11 34 -7 157
-rect -11 30 3 34
+rect -7 158 1 161
+rect -7 157 2 158
+rect -2 154 2 157
+rect 25 154 29 157
+rect 52 154 56 159
+rect 79 154 83 160
+rect -11 81 -4 85
+rect -7 30 3 34
+rect -2 -10 2 -7
+rect 25 -10 29 -7
+rect 52 -10 56 -7
+rect 79 -10 83 -7
 << m2contact >>
+rect -11 157 -7 161
 rect -4 113 0 117
+rect -11 30 -7 34
 rect -4 -14 0 -10
 << metal2 >>
+rect -11 34 -7 157
 rect -4 -10 0 113
 use dflipflop  dflipflop_0
 array 0 3 27 0 0 161
