@@ -1,0 +1,67 @@
+Netgen 1.4.76 compiled on Mon Dec  8 00:18:40 EST 2014
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file spi-interface.net
+Reading netlist file spi-interface.spice
+Comparison output logged to file comp.out
+Logging to file "comp.out" enabled
+Contents of circuit 1:  Cell: 'dflipflop'
+Cell dflipflop contains 16 instances.
+  Class: pfet instances:   7
+  Class: nfet instances:   9
+Cell contains 14 nodes.
+Contents of circuit 2:  Cell: 'dflipflop'
+Cell dflipflop contains 16 instances.
+  Class: pfet instances:   7
+  Class: nfet instances:   9
+Cell contains 14 nodes.
+
+Circuit 1 contains 16 elements, Circuit 2 contains 16 elements.
+Circuit 1 contains 14 nodes,    Circuit 2 contains 14 nodes.
+
+Graphs match with 11 automorphisms.
+Circuits match correctly.
+Reordering pins on instance /dflipflop_0[0]
+Reordering pins on instance /dflipflop_0[1]
+Reordering pins on instance /dflipflop_0[2]
+Reordering pins on instance /dflipflop_0[3]
+Cell pin lists are equivalent.
+Contents of circuit 1:  Cell: 'dflipflopsimple'
+Cell dflipflopsimple contains 7 instances.
+  Class: pfet instances:   4
+  Class: nfet instances:   3
+Cell contains 8 nodes.
+Contents of circuit 2:  Cell: 'dflipflopsimple'
+Cell dflipflopsimple contains 7 instances.
+  Class: pfet instances:   4
+  Class: nfet instances:   3
+Cell contains 8 nodes.
+
+Circuit 1 contains 7 elements, Circuit 2 contains 7 elements.
+Circuit 1 contains 8 nodes,    Circuit 2 contains 8 nodes.
+
+Graphs match with 5 automorphisms.
+Circuits match correctly.
+Cell pin lists cannot be made equivalent.
+  Flattening pin-mismatched subcircuits dflipflopsimple dflipflopsimple
+Contents of circuit 1:  Cell: 'spi-interface.net'
+Cell spi-interface.net contains 36 instances.
+  Class: dflipflop instances:   4
+  Class: pfet instances:  18
+  Class: nfet instances:  14
+Cell contains 27 nodes.
+Contents of circuit 2:  Cell: 'spi-interface.spice'
+Cell spi-interface.spice contains 36 instances.
+  Class: dflipflop instances:   4
+  Class: pfet instances:  18
+  Class: nfet instances:  14
+Cell contains 27 nodes.
+
+Circuit 1 contains 36 elements, Circuit 2 contains 36 elements.
+Circuit 1 contains 27 nodes,    Circuit 2 contains 27 nodes.
+
+Graphs match with 20 automorphisms.
+Circuits match correctly.
+Cell pin lists are equivalent.
+Logging to file "comp.out" disabled
+Result: Circuits match uniquely.
+LVS Done.

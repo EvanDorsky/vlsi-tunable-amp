@@ -1,0 +1,64 @@
+Flattening unmatched subcell invinverter in circuit spi-interface.spice
+Flattening unmatched subcell inverter in circuit spi-interface.spice
+                                                                    
+Subcircuit summary:
+Circuit 1: dflipflop                       |Circuit 2: dflipflop                       
+-------------------------------------------|-------------------------------------------
+pfet (7)                                   |pfet (7)                                   
+nfet (9)                                   |nfet (9)                                   
+Number of elements: 16                     |Number of elements: 16                     
+Number of nodes: 14                        |Number of nodes: 14                        
+---------------------------------------------------------------------------------------
+Circuits match with 11 automorphisms.
+Graphs match with 11 automorphisms.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: dflipflop                       |Circuit 2: dflipflop                       
+-------------------------------------------|-------------------------------------------
+Q                                          |Q                                          
+Qbar                                       |Qbar                                       
+Vss                                        |Gnd                                        
+En                                         |En                                         
+Vdd                                        |Vdd                                        
+D                                          |D                                          
+Dbar                                       |Dbar                                       
+Clk                                        |Clk                                        
+---------------------------------------------------------------------------------------
+                                                                    
+Subcircuit summary:
+Circuit 1: dflipflopsimple                 |Circuit 2: dflipflopsimple                 
+-------------------------------------------|-------------------------------------------
+pfet (4)                                   |pfet (4)                                   
+nfet (3)                                   |nfet (3)                                   
+Number of elements: 7                      |Number of elements: 7                      
+Number of nodes: 8                         |Number of nodes: 8                         
+---------------------------------------------------------------------------------------
+Circuits match with 5 automorphisms.
+Graphs match with 5 automorphisms.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: dflipflopsimple                 |Circuit 2: dflipflopsimple                 
+-------------------------------------------|-------------------------------------------
+Vss                                        |Gnd                                        
+Vdd                                        |Vdd                                        
+D                                          |Dbar                                       
+Dbar                                       |D                                          
+En                                         |En                                         
+Qbar                                       |(no matching pin)                          
+Q                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+  Flattening pin-mismatched subcircuits dflipflopsimple dflipflopsimple                                                                                            
+Subcircuit summary:
+Circuit 1: spi-interface.net               |Circuit 2: spi-interface.spice             
+-------------------------------------------|-------------------------------------------
+dflipflop (4)                              |dflipflop (4)                              
+nfet (14)                                  |nfet (14)                                  
+pfet (18)                                  |pfet (18)                                  
+Number of elements: 36                     |Number of elements: 36                     
+Number of nodes: 27                        |Number of nodes: 27                        
+---------------------------------------------------------------------------------------
+Circuits match with 20 automorphisms.
+Graphs match with 20 automorphisms.
+Circuits match correctly.

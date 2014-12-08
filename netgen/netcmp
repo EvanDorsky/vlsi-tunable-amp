@@ -1,0 +1,4 @@
+netgen -noc << EOF
+lvs $1 $2
+quit
+EOF

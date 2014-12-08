@@ -1,15 +1,33 @@
 magic
 tech scmos
-timestamp 1417997288
+timestamp 1418018115
+<< error_s >>
+rect 5 42 7 47
+rect 11 41 15 47
+rect 15 37 17 41
+rect 6 31 10 34
+rect 17 31 21 34
 << nwell >>
-rect 2 221 101 265
+rect 0 168 99 207
 rect -5 137 108 168
-rect -5 16 108 40
+rect -26 83 -10 107
+rect -10 51 108 60
+rect -26 41 108 51
+rect -26 37 11 41
+rect 15 37 108 41
+rect -26 27 108 37
+rect -5 16 108 27
 << pwell >>
-rect 2 184 101 215
-rect -5 107 108 131
+rect 0 213 99 249
+rect -5 89 108 131
+rect -10 83 108 89
+rect -26 70 108 83
+rect -26 51 -10 70
 rect -5 -21 108 10
 << psubstratepcontact >>
+rect 23 242 27 246
+rect 47 242 51 246
+rect 71 242 75 246
 rect -2 117 2 121
 rect 25 117 29 121
 rect 52 117 56 121
@@ -28,52 +46,112 @@ rect 25 26 29 30
 rect 52 26 56 30
 rect 79 26 83 30
 << polysilicon >>
+rect -12 231 2 233
 rect -10 155 0 157
-rect -10 100 -8 155
-rect -10 92 0 100
-rect -10 49 -8 92
+rect -10 89 -8 155
+rect -10 81 0 89
+rect -10 77 -8 81
+rect -10 75 -3 77
+rect -14 62 -11 64
+rect -5 49 -3 75
 rect -10 47 0 49
 rect -10 -8 -8 47
 rect -10 -10 0 -8
 << polycontact >>
-rect -4 81 0 85
+rect -16 229 -12 233
+rect -2 173 2 177
+rect -4 93 0 97
+rect -27 81 -23 85
+rect -13 58 -9 62
+rect -27 49 -23 53
 << metal1 >>
+rect 24 237 27 242
+rect 48 237 51 242
+rect 72 237 75 242
+rect 0 233 2 237
+rect -7 189 2 193
+rect -16 173 -2 177
 rect -7 158 1 161
 rect -7 157 2 158
 rect -2 154 2 157
 rect 25 154 29 157
 rect 52 154 56 159
 rect 79 154 83 160
-rect -11 81 -4 85
+rect -14 97 -11 101
+rect -4 85 0 93
+rect -14 81 0 85
+rect -14 65 -4 69
+rect -9 58 0 61
+rect -3 53 3 54
+rect -14 51 3 53
+rect -14 49 0 51
+rect -14 33 -11 37
 rect -7 30 3 34
 rect -2 -10 2 -7
 rect 25 -10 29 -7
 rect 52 -10 56 -7
 rect 79 -10 83 -7
 << m2contact >>
+rect -4 233 0 237
+rect -20 229 -16 233
+rect -11 189 -7 193
+rect -20 173 -16 177
+rect 6 165 10 169
+rect 17 165 21 169
+rect 30 165 34 169
+rect 41 165 45 169
+rect 54 165 58 169
+rect 65 165 69 169
+rect 78 165 82 169
+rect 89 165 93 169
 rect -11 157 -7 161
 rect -4 113 0 117
-rect -11 30 -7 34
+rect -11 97 -7 101
+rect -20 81 -16 85
+rect -4 65 0 69
+rect -11 30 -7 37
 rect -4 -14 0 -10
 << metal2 >>
-rect -11 34 -7 157
-rect -4 -10 0 113
+rect -20 177 -17 229
+rect -20 85 -17 173
+rect -11 161 -7 189
+rect -11 101 -7 157
+rect -11 37 -7 97
+rect -4 117 0 233
+rect 6 136 10 165
+rect 17 136 21 165
+rect 30 132 34 165
+rect 41 132 45 165
+rect 69 165 75 169
+rect 54 136 58 165
+rect 71 136 75 165
+rect 93 165 102 169
+rect 78 136 82 165
+rect 98 136 102 165
+rect 54 132 62 136
+rect 71 132 73 136
+rect 78 132 87 136
+rect -4 69 0 113
+rect -4 -10 0 65
 use dflipflopsimple  dflipflopsimple_0
 array 0 3 24 0 0 76
-timestamp 1417996993
-transform 1 0 13 0 1 340
+timestamp 1418017515
+transform -1 0 88 0 -1 88
 box -10 -150 14 -81
-use inverter  inverter_0
-timestamp 1417997274
-transform 1 0 -63 0 1 104
-box -3 -5 6 31
 use inverter  inverter_1
 timestamp 1417997274
-transform 1 0 -44 0 1 59
+transform 1 0 -20 0 1 70
 box -3 -5 6 31
+use invinverter  invinverter_0
+timestamp 1418010646
+transform 1 0 -19 0 1 38
+box -4 -5 5 31
 use dflipflop  dflipflop_0
 array 0 3 27 0 0 161
-timestamp 1417997029
+timestamp 1418018074
 transform 1 0 11 0 1 135
 box -11 -150 16 27
+<< labels >>
+rlabel metal2 -4 0 0 4 1 Gnd
+rlabel m2contact -11 189 -7 193 1 Vdd
 << end >>
