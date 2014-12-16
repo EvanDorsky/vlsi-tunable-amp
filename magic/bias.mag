@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1418768050
+timestamp 1418768461
 << nwell >>
 rect 13 -30 183 102
 << pwell >>
@@ -150,7 +150,7 @@ rect 16 -158 20 -46
 rect 96 -148 100 -51
 rect 176 -159 180 -47
 << nsubstratencontact >>
-rect 16 -14 20 99
+rect 16 -14 20 88
 rect 96 -9 100 99
 rect 176 -14 180 99
 << polysilicon >>

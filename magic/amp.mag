@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1418707788
+timestamp 1418768421
 << nwell >>
 rect -52 -135 -9 126
 rect 34 -135 77 126
@@ -118,34 +118,34 @@ rect 70 8 74 120
 rect -49 -108 -45 -17
 rect 70 -129 74 -17
 << polysilicon >>
-rect -81 120 -75 123
-rect -69 120 -63 123
-rect -26 120 -20 123
-rect 2 120 8 123
-rect 45 120 51 123
-rect 57 121 58 123
-rect 62 121 63 123
+rect -81 120 -75 122
+rect -69 120 -63 122
+rect -26 120 -20 122
+rect 2 120 8 122
+rect 45 120 51 122
+rect 57 121 58 122
+rect 62 121 63 122
 rect 57 120 63 121
 rect -81 -9 -75 0
 rect -69 -9 -63 0
 rect -26 -1 -20 0
 rect 2 -1 8 0
 rect -26 -3 8 -1
-rect -38 -9 -32 -6
+rect -38 -9 -32 -7
 rect -26 -8 8 -6
 rect -26 -9 -20 -8
 rect 2 -9 8 -8
-rect 14 -9 20 -6
+rect 14 -9 20 -7
 rect 45 -9 51 0
 rect 57 -9 63 0
-rect -81 -132 -75 -129
-rect -69 -132 -63 -129
-rect -38 -132 -32 -129
-rect -26 -132 -20 -129
-rect 2 -132 8 -129
-rect 14 -132 20 -129
-rect 45 -132 51 -129
-rect 57 -132 63 -129
+rect -81 -131 -75 -129
+rect -69 -131 -63 -129
+rect -38 -131 -32 -129
+rect -26 -131 -20 -129
+rect 2 -131 8 -129
+rect 14 -131 20 -129
+rect 45 -131 51 -129
+rect 57 -131 63 -129
 << polycontact >>
 rect 58 121 62 125
 << metal1 >>
@@ -184,9 +184,9 @@ rlabel polysilicon -18 -3 0 -1 1 V+
 rlabel polysilicon -18 -8 0 -6 1 V-
 rlabel metal1 -86 -9 -82 0 1 Gnd
 rlabel metal1 64 -9 68 0 1 Vdd
-rlabel polysilicon -38 -132 -32 -131 1 Vbp
-rlabel polysilicon 14 -132 20 -131 1 Vbn
-rlabel polysilicon 45 -132 51 -131 1 Vcp
-rlabel polysilicon -69 -132 -63 -131 1 Vcn
-rlabel polysilicon -81 -132 -75 -131 1 Vbn
+rlabel polysilicon -38 -131 -32 -130 1 Vbp
+rlabel polysilicon 14 -131 20 -130 1 Vbn
+rlabel polysilicon 45 -131 51 -130 1 Vcp
+rlabel polysilicon -69 -131 -63 -130 1 Vcn
+rlabel polysilicon -81 -131 -75 -130 1 Vbn
 << end >>
