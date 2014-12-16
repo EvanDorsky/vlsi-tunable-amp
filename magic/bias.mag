@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1418766823
+timestamp 1418768050
 << nwell >>
 rect 13 -30 183 102
 << pwell >>
@@ -162,10 +162,10 @@ rect 51 96 57 97
 rect 63 96 69 97
 rect 83 96 89 98
 rect 107 96 113 98
-rect 127 96 133 99
-rect 139 96 145 99
-rect 151 96 157 99
-rect 163 96 169 99
+rect 127 96 133 98
+rect 139 96 145 98
+rect 151 96 157 98
+rect 163 96 169 98
 rect 27 -26 33 -24
 rect 39 -26 45 -24
 rect 51 -26 57 -24
@@ -286,4 +286,11 @@ rlabel ndcontact 158 -47 162 -43 1 Gnd
 rlabel pdcontact 122 -17 126 -13 1 Vdd
 rlabel ndcontact 90 -200 94 -196 1 M3source
 rlabel ndcontact 102 -156 106 -152 1 Gnd
+rlabel polysilicon 83 96 89 98 5 Vbp
+rlabel pdiffusion 113 94 116 96 1 Vbn
+rlabel pdiffusion 169 94 172 96 1 Vcp
+rlabel polysilicon 163 96 169 98 5 Vcp
+rlabel ndiffusion 24 -156 27 -154 1 Vcn
+rlabel polysilicon 27 -158 33 -156 1 Vcn
+rlabel pdiffusion 24 94 27 96 1 Vcn
 << end >>
