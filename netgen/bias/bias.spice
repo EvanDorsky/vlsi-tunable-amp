@@ -1,0 +1,29 @@
+* SPICE3 file created from bias.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit bias
+
+M1000 Vdd Vbp Vcn Vdd pfet w=36u l=1.8u
+M1001 a_45_n24# Vbp Vdd Vdd pfet w=36u l=1.8u
+M1002 a_57_n24# Vbp a_45_n24# Vdd pfet w=36u l=1.8u
+M1003 a_39_n158# Vbp a_57_n24# Vdd pfet w=36u l=1.8u
+M1004 Vdd Vbp Vbp Vdd pfet w=36u l=1.8u
+M1005 Vbn Vbp Vdd Vdd pfet w=36u l=1.8u
+M1006 a_133_n24# a_122_n40# Vdd Vdd pfet w=36u l=1.8u
+M1007 a_122_n40# a_122_n40# a_133_n24# Vdd pfet w=36u l=1.8u
+M1008 a_133_n24# a_122_n40# a_122_n40# Vdd pfet w=36u l=1.8u
+M1009 Vcp Vcp a_133_n24# Vdd pfet w=36u l=1.8u
+M1010 a_33_n156# Vcn Vcn Gnd nfet w=36u l=1.8u
+M1011 a_39_n158# a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
+M1012 a_33_n156# a_39_n158# a_39_n158# Gnd nfet w=36u l=1.8u
+M1013 Gnd a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
+M1014 Gnd Vbn Vbp Gnd nfet w=72u l=1.8u
+M1015 Vbn Vbn Gnd Gnd nfet w=36u l=1.8u
+M1016 a_133_n156# Vbn a_122_n40# Gnd nfet w=36u l=1.8u
+M1017 a_145_n156# Vbn a_133_n156# Gnd nfet w=36u l=1.8u
+M1018 Gnd Vbn a_145_n156# Gnd nfet w=36u l=1.8u
+M1019 Vcp Vbn Gnd Gnd nfet w=36u l=1.8u
+.end
+
