@@ -1,0 +1,53 @@
+* SPICE3 file created from newbias.ext - technology: scmos
+
+.option scale=0.3u
+
+.global Vdd Gnd 
+
+
+* Top level circuit newbias
+
+M1000 Gnd c_94_n194# c_96_n201# Gnd phrResistor w=6 l=24
++  ad=0 pd=0 as=0 ps=0
+M1001 Vdd Vbp Vcn Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1002 a_45_n24# Vbp Vdd Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1003 a_57_n24# Vbp a_45_n24# Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1004 a_39_n158# Vbp a_57_n24# Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1005 Vdd Vbp Vbp Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1006 Vbn Vbp Vdd Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1007 a_127_n24# a_116_n40# Vdd Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1008 a_116_n40# a_116_n40# a_127_n24# Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1009 a_127_n24# a_116_n40# a_116_n40# Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1010 Vcp Vcp a_127_n24# Vdd pfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1011 a_33_n156# Vcn Vcn Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1012 a_39_n158# a_39_n158# a_33_n156# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1013 a_33_n156# a_39_n158# a_39_n158# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1014 Gnd a_39_n158# a_33_n156# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1015 c_96_n201# Vbn Vbp Gnd nfet w=240 l=6
++  ad=0 pd=0 as=0 ps=0
+M1016 Vbn Vbn Gnd Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1017 a_127_n156# Vbn a_116_n40# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1018 a_139_n156# Vbn a_127_n156# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1019 Gnd Vbn a_139_n156# Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+M1020 Vcp Vbn Gnd Gnd nfet w=120 l=6
++  ad=0 pd=0 as=0 ps=0
+.end
+
