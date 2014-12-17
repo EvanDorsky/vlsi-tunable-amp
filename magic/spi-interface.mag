@@ -1,30 +1,23 @@
 magic
 tech scmos
-timestamp 1418018115
-<< error_s >>
-rect 5 42 7 47
-rect 11 41 15 47
-rect 15 37 17 41
-rect 6 31 10 34
-rect 17 31 21 34
+timestamp 1418847243
 << nwell >>
-rect 0 168 99 207
-rect -5 137 108 168
+rect 0 262 99 279
+rect 0 168 99 210
+rect -5 134 108 168
 rect -26 83 -10 107
 rect -10 51 108 60
-rect -26 41 108 51
-rect -26 37 11 41
-rect 15 37 108 41
-rect -26 27 108 37
+rect -26 27 108 51
 rect -5 16 108 27
 << pwell >>
-rect 0 213 99 249
-rect -5 89 108 131
+rect 0 210 99 262
+rect -5 89 108 134
 rect -10 83 108 89
 rect -26 70 108 83
 rect -26 51 -10 70
 rect -5 -21 108 10
 << psubstratepcontact >>
+rect 3 242 7 246
 rect 23 242 27 246
 rect 47 242 51 246
 rect 71 242 75 246
@@ -37,6 +30,9 @@ rect 25 -7 29 -3
 rect 52 -7 56 -3
 rect 79 -7 83 -3
 << nsubstratencontact >>
+rect 23 268 27 272
+rect 47 268 51 272
+rect 71 268 75 272
 rect -2 150 2 154
 rect 25 150 29 154
 rect 52 150 56 154
@@ -65,6 +61,23 @@ rect -27 81 -23 85
 rect -13 58 -9 62
 rect -27 49 -23 53
 << metal1 >>
+rect 3 275 83 279
+rect 3 272 7 275
+rect 23 272 27 275
+rect 31 272 35 275
+rect 47 272 51 275
+rect 55 272 59 275
+rect 71 272 75 275
+rect 79 272 83 275
+rect -3 268 8 272
+rect 3 246 7 256
+rect 0 237 3 245
+rect 23 252 31 256
+rect 47 252 55 256
+rect 71 252 79 256
+rect 23 246 27 252
+rect 47 246 51 252
+rect 71 246 75 252
 rect 24 237 27 242
 rect 48 237 51 242
 rect 72 237 75 242
@@ -92,6 +105,7 @@ rect 25 -10 29 -7
 rect 52 -10 56 -7
 rect 79 -10 83 -7
 << m2contact >>
+rect -7 268 -3 272
 rect -4 233 0 237
 rect -20 229 -16 233
 rect -11 189 -7 193
@@ -113,6 +127,7 @@ rect -11 30 -7 37
 rect -4 -14 0 -10
 << metal2 >>
 rect -20 177 -17 229
+rect -11 193 -7 272
 rect -20 85 -17 173
 rect -11 161 -7 189
 rect -11 101 -7 157
@@ -135,9 +150,9 @@ rect -4 69 0 113
 rect -4 -10 0 65
 use dflipflopsimple  dflipflopsimple_0
 array 0 3 24 0 0 76
-timestamp 1418017515
+timestamp 1418846892
 transform -1 0 88 0 -1 88
-box -10 -150 14 -81
+box -10 -186 14 -81
 use inverter  inverter_1
 timestamp 1417997274
 transform 1 0 -20 0 1 70
