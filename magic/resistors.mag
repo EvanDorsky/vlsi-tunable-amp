@@ -1,0 +1,123 @@
+magic
+tech scmos
+timestamp 1418853301
+<< electrode >>
+rect -3 4 3 5
+rect 800 4 806 5
+rect 860 4 866 5
+rect 920 4 926 5
+rect 1030 4 1036 5
+rect 1240 4 1246 5
+rect 1650 4 1656 5
+rect -3 -1 5 4
+rect 797 -1 808 4
+rect 858 -1 868 4
+rect 918 -1 928 4
+rect 1028 -1 1038 4
+rect 1238 -1 1248 4
+rect 1648 -1 1656 4
+<< electrodecontact >>
+rect -2 0 2 4
+rect 801 0 805 4
+rect 861 0 865 4
+rect 921 0 925 4
+rect 1031 0 1035 4
+rect 1241 0 1245 4
+rect 1651 0 1655 4
+<< ntransistor >>
+rect 452 13 617 15
+rect 627 13 792 15
+rect 1040 13 1205 15
+rect 1250 13 1415 15
+<< ndiffusion >>
+rect 614 18 630 19
+rect 452 16 782 18
+rect 786 16 792 18
+rect 452 15 617 16
+rect 627 15 792 16
+rect 1044 16 1205 18
+rect 1040 15 1205 16
+rect 1254 16 1415 18
+rect 1250 15 1415 16
+rect 452 12 617 13
+rect 452 10 613 12
+rect 627 12 792 13
+rect 627 10 788 12
+rect 1040 12 1205 13
+rect 1040 10 1201 12
+rect 1250 12 1415 13
+rect 1250 10 1411 12
+<< ndcontact >>
+rect 782 16 786 20
+rect 1040 16 1044 20
+rect 1250 16 1254 20
+rect 613 8 617 12
+rect 788 8 792 12
+rect 1201 8 1205 12
+rect 1411 8 1415 12
+<< polysilicon >>
+rect 450 14 452 15
+rect 446 13 452 14
+rect 617 13 620 15
+rect 625 13 627 15
+rect 792 14 795 15
+rect 792 13 799 14
+rect 1038 13 1040 15
+rect 1205 13 1212 15
+rect 1248 13 1250 15
+rect 1415 13 1422 15
+<< polycontact >>
+rect 446 14 450 18
+rect 795 14 799 18
+rect 1208 15 1212 19
+rect 1418 15 1422 19
+<< metal1 >>
+rect -1 4 2 32
+rect 446 18 449 26
+rect 796 18 799 32
+rect 617 8 777 11
+rect 774 -9 777 8
+rect 782 -3 785 16
+rect 802 11 805 32
+rect 792 8 805 11
+rect 802 4 805 8
+rect 862 4 865 32
+rect 922 4 925 32
+rect 1032 19 1035 32
+rect 1032 16 1040 19
+rect 1208 19 1211 35
+rect 1242 19 1245 32
+rect 1032 4 1035 16
+rect 1242 16 1250 19
+rect 1419 19 1422 30
+rect 1242 12 1245 16
+rect 1652 12 1655 32
+rect 1205 8 1245 12
+rect 1415 8 1655 12
+rect 1242 4 1245 8
+rect 1652 4 1655 8
+rect 862 -3 865 0
+rect 782 -6 865 -3
+rect 922 -9 925 0
+rect 774 -12 925 -9
+<< high_resist >>
+rect 5 4 797 6
+rect 808 4 858 6
+rect 868 4 918 6
+rect 928 4 1028 6
+rect 1038 4 1238 6
+rect 1248 4 1648 6
+rect 5 -3 797 -1
+rect 808 -3 858 -1
+rect 868 -3 918 -1
+rect 928 -3 1028 -1
+rect 1038 -3 1238 -1
+rect 1248 -3 1648 -1
+<< poly2_high_resist >>
+rect 5 -1 797 4
+rect 808 -1 858 4
+rect 868 -1 918 4
+rect 928 -1 1028 4
+rect 1038 -1 1238 4
+rect 1248 -1 1648 4
+<< end >>
