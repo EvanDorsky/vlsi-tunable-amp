@@ -22,6 +22,3 @@ PINATTR SpiceOrder 5
 PIN 32 -32 RIGHT 8
 PINATTR PinName Q
 PINATTR SpiceOrder 6
-PIN 32 16 NONE 8
-PINATTR PinName Qbar
-PINATTR SpiceOrder 7
