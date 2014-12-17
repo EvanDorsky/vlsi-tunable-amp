@@ -1,25 +1,64 @@
 magic
 tech scmos
-timestamp 1418855594
+timestamp 1418856790
 << nwell >>
+rect 766 603 770 607
+rect 766 599 769 600
+rect 766 579 770 583
 rect 518 511 562 514
 rect 636 511 670 514
+<< pwell >>
+rect 753 618 756 619
+rect 761 613 762 614
+rect 759 612 762 613
+rect 759 611 761 612
+rect 760 608 761 611
+rect 752 604 753 607
+rect 760 597 763 608
 << metal1 >>
+rect 753 618 756 619
 rect 735 520 790 524
 << m2contact >>
 rect 823 625 827 629
+rect 766 603 770 607
+rect 766 579 770 583
+rect 766 555 770 559
+rect 766 531 770 535
 << metal2 >>
-rect 774 625 823 629
+rect 753 607 756 636
+rect 759 614 762 636
+rect 765 620 768 636
+rect 771 626 774 636
+rect 777 629 786 633
+rect 771 623 776 626
+rect 782 625 823 629
+rect 765 617 770 620
+rect 759 611 763 614
+rect 752 604 756 607
+rect 752 576 755 604
+rect 760 600 763 611
+rect 767 607 770 617
+rect 760 597 769 600
+rect 766 583 769 597
+rect 752 573 769 576
+rect 766 559 769 573
+rect 773 535 776 623
+rect 770 532 776 535
 use resistors  resistors_0
 timestamp 1418855221
 transform -1 0 1688 0 -1 699
 box -3 -12 1656 35
 use spi-interface  spi-interface_0
-timestamp 1418847243
+timestamp 1418856619
 transform 0 1 502 -1 0 622
 box -27 -21 108 279
 use amplifier  amplifier_0
 timestamp 1418853988
 transform 1 0 781 0 1 394
 box -781 -394 952 261
+<< labels >>
+rlabel metal2 765 634 768 636 1 B0
+rlabel metal2 759 634 762 636 1 B1
+rlabel metal2 753 634 756 636 1 B2
+rlabel metal2 771 634 774 636 1 B3
 << end >>
