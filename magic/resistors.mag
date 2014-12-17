@@ -1,18 +1,18 @@
 magic
 tech scmos
-timestamp 1418853301
+timestamp 1418855221
 << electrode >>
 rect -3 4 3 5
 rect 800 4 806 5
 rect 860 4 866 5
-rect 920 4 926 5
+rect 970 4 976 5
 rect 1030 4 1036 5
 rect 1240 4 1246 5
 rect 1650 4 1656 5
 rect -3 -1 5 4
 rect 797 -1 808 4
 rect 858 -1 868 4
-rect 918 -1 928 4
+rect 968 -1 978 4
 rect 1028 -1 1038 4
 rect 1238 -1 1248 4
 rect 1648 -1 1656 4
@@ -20,7 +20,7 @@ rect 1648 -1 1656 4
 rect -2 0 2 4
 rect 801 0 805 4
 rect 861 0 865 4
-rect 921 0 925 4
+rect 971 0 975 4
 rect 1031 0 1035 4
 rect 1241 0 1245 4
 rect 1651 0 1655 4
@@ -78,15 +78,12 @@ rect 796 18 799 32
 rect 617 8 777 11
 rect 774 -9 777 8
 rect 782 -3 785 16
-rect 802 11 805 32
-rect 792 8 805 11
-rect 802 4 805 8
-rect 862 4 865 32
-rect 922 4 925 32
-rect 1032 19 1035 32
 rect 1032 16 1040 19
 rect 1208 19 1211 35
-rect 1242 19 1245 32
+rect 792 8 805 11
+rect 802 4 805 8
+rect 862 4 865 11
+rect 972 4 975 10
 rect 1032 4 1035 16
 rect 1242 16 1250 19
 rect 1419 19 1422 30
@@ -98,26 +95,33 @@ rect 1242 4 1245 8
 rect 1652 4 1655 8
 rect 862 -3 865 0
 rect 782 -6 865 -3
-rect 922 -9 925 0
-rect 774 -12 925 -9
+rect 972 -9 975 0
+rect 774 -12 975 -9
 << high_resist >>
 rect 5 4 797 6
 rect 808 4 858 6
-rect 868 4 918 6
-rect 928 4 1028 6
+rect 868 4 968 6
+rect 978 4 1028 6
 rect 1038 4 1238 6
 rect 1248 4 1648 6
 rect 5 -3 797 -1
 rect 808 -3 858 -1
-rect 868 -3 918 -1
-rect 928 -3 1028 -1
+rect 868 -3 968 -1
+rect 978 -3 1028 -1
 rect 1038 -3 1238 -1
 rect 1248 -3 1648 -1
 << poly2_high_resist >>
 rect 5 -1 797 4
 rect 808 -1 858 4
-rect 868 -1 918 4
-rect 928 -1 1028 4
+rect 868 -1 968 4
+rect 978 -1 1028 4
 rect 1038 -1 1238 4
 rect 1248 -1 1648 4
+<< labels >>
+rlabel metal1 796 24 799 32 1 B0
+rlabel metal1 1208 25 1211 35 5 B2
+rlabel metal1 1419 19 1422 30 1 B3
+rlabel metal1 1652 4 1655 32 7 Vref
+rlabel metal1 446 18 449 26 1 B1
+rlabel metal1 -1 4 2 32 3 Vout
 << end >>
