@@ -1,0 +1,12 @@
+                                                                    
+Subcircuit summary:
+Circuit 1: bias/bias.net                   |Circuit 2: bias/bias.spice                 
+-------------------------------------------|-------------------------------------------
+nfet (10)                                  |nfet (10)                                  
+pfet (10)                                  |pfet (10)                                  
+Number of elements: 20                     |Number of elements: 20                     
+Number of nodes: 14                        |Number of nodes: 14                        
+---------------------------------------------------------------------------------------
+Circuits match with 2 automorphisms.
+Graphs match with 2 automorphisms.
+Circuits match correctly.

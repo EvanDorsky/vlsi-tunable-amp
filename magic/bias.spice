@@ -1,0 +1,51 @@
+* SPICE3 file created from bias.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit bias
+
+M1000 Vbn what M3source Gnd phrResistor w=1.8u l=7.2u
++  ad=0p pd=0u as=0p ps=0u
+M1001 Vdd Vbp Vcn Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_45_n24# Vbp Vdd Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1003 a_57_n24# Vbp a_45_n24# Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_39_n158# Vbp a_57_n24# Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1005 Vdd Vbp Vbp Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1006 Vbn Vbp Vdd Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1007 a_133_n24# a_122_n40# Vdd Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_122_n40# a_122_n40# a_133_n24# Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1009 a_133_n24# a_122_n40# a_122_n40# Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1010 Vcp Vcp a_133_n24# Vdd pfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1011 a_33_n156# Vcn Vcn Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1012 a_39_n158# a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1013 a_33_n156# a_39_n158# a_39_n158# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1014 Gnd a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1015 M3source Vbn Vbp Gnd nfet w=72u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1016 Vbn Vbn Gnd Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1017 a_133_n156# Vbn a_122_n40# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1018 a_145_n156# Vbn a_133_n156# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1019 Gnd Vbn a_145_n156# Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+M1020 Vcp Vbn Gnd Gnd nfet w=36u l=1.8u
++  ad=0p pd=0u as=0p ps=0u
+.end
+

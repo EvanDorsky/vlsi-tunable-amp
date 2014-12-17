@@ -2,3 +2,5 @@
 *.raw
 *.net
 *.plt
+
+*.ext
