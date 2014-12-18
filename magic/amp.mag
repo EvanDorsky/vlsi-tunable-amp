@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1418768421
+timestamp 1418875346
 << nwell >>
 rect -52 -135 -9 126
 rect 34 -135 77 126
@@ -123,9 +123,7 @@ rect -69 120 -63 122
 rect -26 120 -20 122
 rect 2 120 8 122
 rect 45 120 51 122
-rect 57 121 58 122
-rect 62 121 63 122
-rect 57 120 63 121
+rect 57 120 63 122
 rect -81 -9 -75 0
 rect -69 -9 -63 0
 rect -26 -1 -20 0
@@ -145,13 +143,13 @@ rect -26 -131 -20 -129
 rect 2 -131 8 -129
 rect 14 -131 20 -129
 rect 45 -131 51 -129
-rect 57 -131 63 -129
+rect 57 -130 63 -129
+rect 57 -131 58 -130
+rect 62 -131 63 -130
 << polycontact >>
-rect 58 121 62 125
+rect 58 -134 62 -130
 << metal1 >>
-rect 58 120 62 121
 rect -58 116 40 120
-rect 44 116 62 120
 rect -70 109 -19 113
 rect 1 109 52 113
 rect -92 4 -88 8
@@ -179,6 +177,8 @@ rect 70 -17 74 -13
 rect -70 -122 -19 -118
 rect 1 -122 52 -118
 rect -58 -129 40 -125
+rect 44 -129 62 -125
+rect 58 -130 62 -129
 << labels >>
 rlabel polysilicon -18 -3 0 -1 1 V+
 rlabel polysilicon -18 -8 0 -6 1 V-
