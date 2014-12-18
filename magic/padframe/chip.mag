@@ -1,0 +1,164 @@
+magic
+tech scmos
+timestamp 1259953556
+use blankpad  blankpad_11
+timestamp 1259953556
+transform -1 0 841 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_12
+timestamp 1259953556
+transform -1 0 1315 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_13
+timestamp 1259953556
+transform -1 0 1789 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_14
+timestamp 1259953556
+transform -1 0 2263 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_15
+timestamp 1259953556
+transform -1 0 2737 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_16
+timestamp 1259953556
+transform -1 0 3211 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_17
+timestamp 1259953556
+transform -1 0 3685 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_10
+timestamp 1259953556
+transform -1 0 4159 0 -1 5000
+box -2 0 476 513
+use blankpad  blankpad_9
+timestamp 1259953556
+transform -1 0 4633 0 -1 5000
+box -2 0 476 513
+use padframe_top  padframe_top_0
+timestamp 1259953556
+transform 1 0 0 0 1 4487
+box 0 0 5000 513
+use blankpad  blankpad_27
+timestamp 1259953556
+transform 0 1 0 -1 0 4633
+box -2 0 476 513
+use blankpad  blankpad_28
+timestamp 1259953556
+transform 0 1 0 -1 0 4159
+box -2 0 476 513
+use blankpad  blankpad_35
+timestamp 1259953556
+transform 0 1 0 -1 0 3685
+box -2 0 476 513
+use blankpad  blankpad_34
+timestamp 1259953556
+transform 0 1 0 -1 0 3211
+box -2 0 476 513
+use blankpad  blankpad_33
+timestamp 1259953556
+transform 0 1 0 -1 0 2737
+box -2 0 476 513
+use blankpad  blankpad_32
+timestamp 1259953556
+transform 0 1 0 -1 0 2263
+box -2 0 476 513
+use blankpad  blankpad_31
+timestamp 1259953556
+transform 0 1 0 -1 0 1789
+box -2 0 476 513
+use blankpad  blankpad_30
+timestamp 1259953556
+transform 0 1 0 -1 0 1315
+box -2 0 476 513
+use blankpad  blankpad_2
+timestamp 1259953556
+transform 0 -1 5000 1 0 4159
+box -2 0 476 513
+use blankpad  blankpad_3
+timestamp 1259953556
+transform 0 -1 5000 1 0 3685
+box -2 0 476 513
+use blankpad  blankpad_4
+timestamp 1259953556
+transform 0 -1 5000 1 0 3211
+box -2 0 476 513
+use blankpad  blankpad_5
+timestamp 1259953556
+transform 0 -1 5000 1 0 2737
+box -2 0 476 513
+use blankpad  blankpad_6
+timestamp 1259953556
+transform 0 -1 5000 1 0 2263
+box -2 0 476 513
+use blankpad  blankpad_7
+timestamp 1259953556
+transform 0 -1 5000 1 0 1789
+box -2 0 476 513
+use blankpad  blankpad_8
+timestamp 1259953556
+transform 0 -1 5000 1 0 1315
+box -2 0 476 513
+use blankpad  blankpad_1
+timestamp 1259953556
+transform 0 -1 5000 1 0 841
+box -2 0 476 513
+use padframe_left  padframe_left_0
+timestamp 1259953556
+transform 1 0 0 0 1 367
+box 2 2 513 4264
+use blankpad  blankpad_29
+timestamp 1259953556
+transform 0 1 0 -1 0 841
+box -2 0 476 513
+use blankpad  blankpad_18
+timestamp 1259953556
+transform 1 0 367 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_19
+timestamp 1259953556
+transform 1 0 841 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_26
+timestamp 1259953556
+transform 1 0 1315 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_25
+timestamp 1259953556
+transform 1 0 1789 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_24
+timestamp 1259953556
+transform 1 0 2263 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_23
+timestamp 1259953556
+transform 1 0 2737 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_22
+timestamp 1259953556
+transform 1 0 3211 0 1 0
+box -2 0 476 513
+use blankpad  blankpad_21
+timestamp 1259953556
+transform 1 0 3685 0 1 0
+box -2 0 476 513
+use padframe_right  padframe_right_0
+timestamp 1259953556
+transform 1 0 4487 0 1 367
+box 0 2 511 4264
+use blankpad  blankpad_0
+timestamp 1259953556
+transform 0 -1 5000 1 0 367
+box -2 0 476 513
+use blankpad  blankpad_20
+timestamp 1259953556
+transform 1 0 4159 0 1 0
+box -2 0 476 513
+use padframe_bottom  padframe_bottom_0
+timestamp 1259953556
+transform 1 0 0 0 1 0
+box 0 0 5000 513
+<< end >>
