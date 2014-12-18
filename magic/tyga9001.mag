@@ -1,39 +1,39 @@
 magic
 tech scmos
-timestamp 1259953556
-use blankpad  blankpad_11
+timestamp 1418873168
+use barepad  barepad_1
 timestamp 1259953556
 transform -1 0 841 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_12
+use inpad  inpad_1
 timestamp 1259953556
 transform -1 0 1315 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_13
+use inpad  inpad_0
 timestamp 1259953556
 transform -1 0 1789 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_14
+use blankpad  blankpad_3
 timestamp 1259953556
 transform -1 0 2263 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_15
+use inorpad  inorpad_6
 timestamp 1259953556
 transform -1 0 2737 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_16
+use inorpad  inorpad_5
 timestamp 1259953556
 transform -1 0 3211 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_17
+use inorpad  inorpad_4
 timestamp 1259953556
 transform -1 0 3685 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_10
+use inorpad  inorpad_3
 timestamp 1259953556
 transform -1 0 4159 0 -1 5000
 box -2 0 476 513
-use blankpad  blankpad_9
+use barepad  barepad_0
 timestamp 1259953556
 transform -1 0 4633 0 -1 5000
 box -2 0 476 513
@@ -41,55 +41,55 @@ use padframe_top  padframe_top_0
 timestamp 1259953556
 transform 1 0 0 0 1 4487
 box 0 0 5000 513
-use blankpad  blankpad_27
+use barepad  barepad_2
 timestamp 1259953556
 transform 0 1 0 -1 0 4633
 box -2 0 476 513
-use blankpad  blankpad_28
+use inorpad  inorpad_7
 timestamp 1259953556
 transform 0 1 0 -1 0 4159
 box -2 0 476 513
-use blankpad  blankpad_35
+use inorpad  inorpad_8
 timestamp 1259953556
 transform 0 1 0 -1 0 3685
 box -2 0 476 513
-use blankpad  blankpad_34
+use inorpad  inorpad_9
 timestamp 1259953556
 transform 0 1 0 -1 0 3211
 box -2 0 476 513
-use blankpad  blankpad_33
+use inorpad  inorpad_10
 timestamp 1259953556
 transform 0 1 0 -1 0 2737
 box -2 0 476 513
-use blankpad  blankpad_32
+use inpad  inpad_2
 timestamp 1259953556
 transform 0 1 0 -1 0 2263
 box -2 0 476 513
-use blankpad  blankpad_31
+use inpad  inpad_3
 timestamp 1259953556
 transform 0 1 0 -1 0 1789
 box -2 0 476 513
-use blankpad  blankpad_30
+use inpad  inpad_4
 timestamp 1259953556
 transform 0 1 0 -1 0 1315
 box -2 0 476 513
-use blankpad  blankpad_2
+use inorpad  inorpad_17
 timestamp 1259953556
 transform 0 -1 5000 1 0 4159
 box -2 0 476 513
-use blankpad  blankpad_3
+use inorpad  inorpad_0
 timestamp 1259953556
 transform 0 -1 5000 1 0 3685
 box -2 0 476 513
-use blankpad  blankpad_4
+use inorpad  inorpad_1
 timestamp 1259953556
 transform 0 -1 5000 1 0 3211
 box -2 0 476 513
-use blankpad  blankpad_5
+use inorpad  inorpad_2
 timestamp 1259953556
 transform 0 -1 5000 1 0 2737
 box -2 0 476 513
-use blankpad  blankpad_6
+use blankpad  blankpad_2
 timestamp 1259953556
 transform 0 -1 5000 1 0 2263
 box -2 0 476 513
@@ -109,39 +109,39 @@ use padframe_left  padframe_left_0
 timestamp 1259953556
 transform 1 0 0 0 1 367
 box 2 2 513 4264
-use blankpad  blankpad_29
+use iopad  iopad_0
 timestamp 1259953556
 transform 0 1 0 -1 0 841
 box -2 0 476 513
-use blankpad  blankpad_18
+use iopad  iopad_1
 timestamp 1259953556
 transform 1 0 367 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_19
+use inorpad  inorpad_11
 timestamp 1259953556
 transform 1 0 841 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_26
+use inorpad  inorpad_12
 timestamp 1259953556
 transform 1 0 1315 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_25
+use iopad  iopad_2
 timestamp 1259953556
 transform 1 0 1789 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_24
+use iopad  iopad_3
 timestamp 1259953556
 transform 1 0 2263 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_23
+use inorpad  inorpad_13
 timestamp 1259953556
 transform 1 0 2737 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_22
+use inorpad  inorpad_14
 timestamp 1259953556
 transform 1 0 3211 0 1 0
 box -2 0 476 513
-use blankpad  blankpad_21
+use inorpad  inorpad_15
 timestamp 1259953556
 transform 1 0 3685 0 1 0
 box -2 0 476 513
@@ -153,7 +153,7 @@ use blankpad  blankpad_0
 timestamp 1259953556
 transform 0 -1 5000 1 0 367
 box -2 0 476 513
-use blankpad  blankpad_20
+use inorpad  inorpad_16
 timestamp 1259953556
 transform 1 0 4159 0 1 0
 box -2 0 476 513
