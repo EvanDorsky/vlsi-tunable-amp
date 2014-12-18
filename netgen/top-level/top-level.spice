@@ -1,0 +1,326 @@
+* SPICE3 file created from top-level.ext - technology: scmos
+
+.global Vdd Gnd
+
+.subckt bias Vbp Vdd Vcn Vcp Gnd Vbn
+R1 M3source Gnd 4k
+M1001 Vdd Vbp Vcn Vdd pfet w=36u l=1.8u
+M1002 a_45_n24# Vbp Vdd Vdd pfet w=36u l=1.8u
+M1003 a_57_n24# Vbp a_45_n24# Vdd pfet w=36u l=1.8u
+M1004 a_39_n158# Vbp a_57_n24# Vdd pfet w=36u l=1.8u
+M1005 Vdd Vbp Vbp Vdd pfet w=36u l=1.8u
+M1006 Vbn Vbp Vdd Vdd pfet w=36u l=1.8u
+M1007 a_133_n24# a_122_n40# Vdd Vdd pfet w=36u l=1.8u
+M1008 a_122_n40# a_122_n40# a_133_n24# Vdd pfet w=36u l=1.8u
+M1009 a_133_n24# a_122_n40# a_122_n40# Vdd pfet w=36u l=1.8u
+M1010 Vcp Vcp a_133_n24# Vdd pfet w=36u l=1.8u
+M1011 a_33_n156# Vcn Vcn Gnd nfet w=36u l=1.8u
+M1012 a_39_n158# a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
+M1013 a_33_n156# a_39_n158# a_39_n158# Gnd nfet w=36u l=1.8u
+M1014 Gnd a_39_n158# a_33_n156# Gnd nfet w=36u l=1.8u
+M1015 M3source Vbn Vbp Gnd nfet w=72u l=1.8u
+M1016 Vbn Vbn Gnd Gnd nfet w=36u l=1.8u
+M1017 a_133_n156# Vbn a_122_n40# Gnd nfet w=36u l=1.8u
+M1018 a_145_n156# Vbn a_133_n156# Gnd nfet w=36u l=1.8u
+M1019 Gnd Vbn a_145_n156# Gnd nfet w=36u l=1.8u
+M1020 Vcp Vbn Gnd Gnd nfet w=36u l=1.8u
+.ends
+
+.subckt amp Vbp Vdd Vcn Vcp Gnd V- a_n63_0# Vbn a_n63_n129#
+M1000 a_n75_0# Vbn Gnd Gnd nfet w=36u l=1.8u
+M1001 a_n63_0# Vcn a_n75_0# Gnd nfet w=36u l=1.8u
+M1002 a_n75_0# V+ a_n32_n129# Vdd pfet w=36u l=1.8u
+M1003 a_8_n129# V+ a_n3_109# Gnd nfet w=36u l=1.8u
+M1004 a_n3_109# Vcp a_n63_0# Vdd pfet w=36u l=1.8u
+M1005 Vdd a_n63_n129# a_n3_109# Vdd pfet w=36u l=1.8u
+M1006 a_n75_n129# Vbn Gnd Gnd nfet w=36u l=1.8u
+M1007 a_n63_n129# Vcn a_n75_n129# Gnd nfet w=36u l=1.8u
+M1008 a_n32_n129# Vbp Vdd Vdd pfet w=36u l=1.8u
+M1009 a_n75_n129# V- a_n32_n129# Vdd pfet w=36u l=1.8u
+M1010 a_8_n129# V- a_n3_n122# Gnd nfet w=36u l=1.8u
+M1011 Gnd Vbn a_8_n129# Gnd nfet w=36u l=1.8u
+M1012 a_n3_n122# Vcp a_n63_n129# Vdd pfet w=36u l=1.8u
+M1013 Vdd a_n63_n129# a_n3_n122# Vdd pfet w=36u l=1.8u
+.ends
+
+.subckt amplifier amp_0/Vdd c_791_n128# Gnd amp_0/Vdd amp_0/V-
+Xbias_0 amp_0/Vbp amp_0/Vdd amp_0/Vcn amp_0/Vcp Gnd amp_0/Vbn bias
+Xamp_0 amp_0/Vbp amp_0/Vdd amp_0/Vcn amp_0/Vcp Gnd amp_0/V- a_179_n133# amp_0/Vbn a_n781_n137# amp
+M1000 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1001 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1002 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1003 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1004 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1005 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1006 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1007 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1008 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1009 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1010 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1011 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1012 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1013 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1014 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1015 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1016 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1017 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1018 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1019 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1020 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1021 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1022 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1023 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1024 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1025 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1026 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1027 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1028 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1029 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1030 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1031 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1032 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1033 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1034 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1035 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1036 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1037 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1038 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1039 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1040 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1041 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1042 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1043 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1044 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1045 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1046 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1047 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1048 amp_0/Vdd a_n781_n137# Vout_not amp_0/Vdd pfet w=72u l=1.8u
+M1049 Vout_not a_n781_n137# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1050 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1051 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1052 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1053 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1054 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1055 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1056 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1057 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1058 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1059 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1060 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1061 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1062 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1063 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1064 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1065 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1066 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1067 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1068 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1069 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1070 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1071 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1072 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1073 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1074 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1075 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1076 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1077 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1078 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1079 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1080 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1081 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1082 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1083 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1084 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1085 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1086 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1087 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1088 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1089 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1090 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1091 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1092 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1093 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1094 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1095 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1096 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1097 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1098 amp_0/Vdd a_179_n133# c_791_n128# amp_0/Vdd pfet w=72u l=1.8u
+M1099 c_791_n128# a_179_n133# amp_0/Vdd amp_0/Vdd pfet w=72u l=1.8u
+M1100 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1101 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1102 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1103 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1104 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1105 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1106 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1107 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1108 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1109 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1110 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1111 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1112 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1113 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1114 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1115 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1116 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1117 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1118 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1119 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1120 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1121 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1122 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1123 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1124 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1125 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1126 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1127 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1128 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1129 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1130 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1131 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1132 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1133 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1134 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1135 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1136 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1137 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1138 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1139 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1140 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1141 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1142 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1143 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1144 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1145 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1146 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1147 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1148 Vout_not Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1149 Gnd Vout_not Vout_not Gnd nfet w=72u l=1.8u
+M1150 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1151 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1152 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1153 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1154 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1155 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1156 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1157 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1158 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1159 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1160 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1161 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1162 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1163 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1164 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1165 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1166 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1167 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1168 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1169 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1170 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1171 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1172 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1173 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1174 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1175 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1176 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1177 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1178 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1179 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1180 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1181 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1182 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1183 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1184 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1185 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1186 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1187 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1188 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1189 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1190 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1191 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1192 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1193 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1194 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1195 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1196 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1197 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+M1198 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
+M1199 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
+C0 a_n781_n137# Vout_not 2031.5fF
+C1 a_179_n133# c_791_n128# 2031.7fF
+.ends
+
+.subckt dflipflop Qbar Vdd Gnd En D Dbar Q Clk
+M1000 Vdd Clk a_n5_15# Vdd pfet w=1.2u l=0.6u
+M1001 a_n5_15# Q Qbar Vdd pfet w=1.2u l=0.6u
+M1002 a_n5_15# Qbar Q Vdd pfet w=1.2u l=0.6u
+M1003 Qbar Q Gnd Gnd nfet w=1.2u l=0.6u
+M1004 Q Qbar Gnd Gnd nfet w=1.2u l=0.6u
+M1005 Qbar En a_n8_n46# Gnd nfet w=1.2u l=2.4u
+M1006 Q En a_0_n46# Gnd nfet w=1.2u l=2.4u
+M1007 a_n8_n46# Clk a_n8_n93# Gnd nfet w=1.2u l=2.4u
+M1008 a_0_n46# Clk a_n8_n138# Gnd nfet w=1.2u l=2.4u
+M1009 Dbar Clk a_n8_n93# Vdd pfet w=1.2u l=0.6u
+M1010 D Clk a_n8_n138# Vdd pfet w=1.2u l=0.6u
+M1011 Vdd a_n8_n138# a_n8_n93# Vdd pfet w=1.2u l=0.6u
+M1012 Vdd a_n8_n93# a_n8_n138# Vdd pfet w=1.2u l=0.6u
+M1013 a_n8_n93# a_n8_n138# a_n5_n142# Gnd nfet w=1.2u l=0.6u
+M1014 a_n8_n138# a_n8_n93# a_n5_n142# Gnd nfet w=1.2u l=0.6u
+M1015 a_n5_n142# Clk Gnd Gnd nfet w=1.2u l=0.6u
+.ends
+
+.subckt invinverter Z Vdd Gnd A
+M1000 Gnd A Z Gnd nfet w=1.2u l=0.6u
+M1001 Z A Vdd Vdd pfet w=1.2u l=0.6u
+.ends
+
+.subckt inverter Z Vdd Gnd A
+M1000 Vdd A Z Vdd pfet w=1.2u l=0.6u
+M1001 Z A Gnd Gnd nfet w=1.2u l=0.6u
+.ends
+
+.subckt dflipflopsimple Vdd Gnd D En Dbar Qout
+M1000 D En Q Vdd pfet w=1.2u l=0.6u
+M1001 Dbar En Qbar Vdd pfet w=1.2u l=0.6u
+M1002 Vdd Qbar Q Vdd pfet w=1.2u l=0.6u
+M1003 Vdd Q Qbar Vdd pfet w=1.2u l=0.6u
+M1004 Q Qbar a_n5_n142# Gnd nfet w=1.2u l=0.6u
+M1005 Qbar Q a_n5_n142# Gnd nfet w=1.2u l=0.6u
+M1006 a_n5_n142# En Gnd Gnd nfet w=1.2u l=0.6u
+M1007 Gnd Qbar Qout Gnd nfet w=1.2u l=0.6u
+M1008 Vdd Qbar Qout Vdd pfet w=1.2u l=0.6u
+.ends
+
+.subckt spi-interface Vdd dflipflopsimple_0[1]/Qout Gnd Vdd dflipflopsimple_0[0]/Qout dflipflopsimple_0[3]/Qout dflipflopsimple_0[2]/Qout Vdd Gnd
+Xdflipflop_0[0] dflipflop_0[0]/Qbar Vdd Gnd inverter_1/Z invinverter_0/A invinverter_0/Z dflipflop_0[0]/Q dflipflop_0[0]/Clk dflipflop
+Xdflipflop_0[1] dflipflop_0[1]/Qbar Vdd Gnd inverter_1/Z dflipflop_0[0]/Q dflipflop_0[0]/Qbar dflipflop_0[1]/Q dflipflop_0[0]/Clk dflipflop
+Xdflipflop_0[2] dflipflop_0[2]/Qbar Vdd Gnd inverter_1/Z dflipflop_0[1]/Q dflipflop_0[1]/Qbar dflipflop_0[2]/Q dflipflop_0[0]/Clk dflipflop
+Xdflipflop_0[3] dflipflop_0[3]/Qbar Vdd Gnd inverter_1/Z dflipflop_0[2]/Q dflipflop_0[2]/Qbar dflipflop_0[3]/Q dflipflop_0[0]/Clk dflipflop
+Xinvinverter_0 invinverter_0/Z Vdd Gnd invinverter_0/A invinverter
+Xinverter_1 inverter_1/Z Vdd Gnd inverter_1/A inverter
+Xdflipflopsimple_0[0] Vdd Gnd dflipflop_0[3]/Q inverter_1/Z dflipflop_0[3]/Qbar dflipflopsimple_0[0]/Qout dflipflopsimple
+Xdflipflopsimple_0[1] Vdd Gnd dflipflop_0[2]/Q inverter_1/Z dflipflop_0[2]/Qbar dflipflopsimple_0[1]/Qout dflipflopsimple
+Xdflipflopsimple_0[2] Vdd Gnd dflipflop_0[1]/Q inverter_1/Z dflipflop_0[1]/Qbar dflipflopsimple_0[2]/Qout dflipflopsimple
+Xdflipflopsimple_0[3] Vdd Gnd dflipflop_0[0]/Q inverter_1/Z dflipflop_0[0]/Qbar dflipflopsimple_0[3]/Qout dflipflopsimple
+.ends
+
+.subckt resistors B1 B2 B3 Vout c_797_n1# B0
+M1000 c_797_n1# c_5_n3# Vout Gnd phrResistor w=1.5u l=237.6u
+M1001 c_858_n1# c_808_n3# c_797_n1# Gnd phrResistor w=1.5u l=15u
+M1002 c_968_n1# c_868_n3# c_858_n1# Gnd phrResistor w=1.5u l=30u
+M1003 c_1028_n1# c_978_n3# c_968_n1# Gnd phrResistor w=1.5u l=15u
+M1004 c_1238_n1# c_1038_n3# c_1028_n1# Gnd phrResistor w=1.5u l=60u
+M1005 Vref c_1248_n3# c_1238_n1# Gnd phrResistor w=1.5u l=120u
+M1006 c_858_n1# B1 c_968_n1# Gnd nfet w=49.5u l=0.6u
+M1007 c_858_n1# B0 c_797_n1# Gnd nfet w=49.5u l=0.6u
+M1008 c_1028_n1# B2 c_1238_n1# Gnd nfet w=49.5u l=0.6u
+M1009 c_1238_n1# B3 Vref Gnd nfet w=49.5u l=0.6u
+.ends
+
+
+* Top level circuit top-level
+
+Xamplifier_0 spi-interface_0/Vdd resistors_0/Vout amplifier_0/amp_0/Gnd spi-interface_0/dflipflop_0[0]/Vdd amplifier_0/amp_0/V- amplifier
+Xspi-interface_0 spi-interface_0/Vdd B2 amplifier_0/amp_0/Gnd spi-interface_0/Vdd B3 B0 B1 spi-interface_0/dflipflop_0[0]/Vdd amplifier_0/amp_0/Gnd spi-interface
+Xresistors_0 B1 B2 B3 resistors_0/Vout amplifier_0/amp_0/V- B0 resistors
+.end

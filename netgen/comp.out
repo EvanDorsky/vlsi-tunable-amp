@@ -1,3 +1,53 @@
+Flattening unmatched subcell invinverter in circuit spi-interface
+Flattening unmatched subcell inverter in circuit spi-interface
+Flattening unmatched subcell resistors in circuit top-level/top-level.spice
+
+Subcircuit summary:
+Circuit 1: dflipflop                       |Circuit 2: dflipflop
+-------------------------------------------|-------------------------------------------
+pfet (7)                                   |pfet (7)
+nfet (9)                                   |nfet (9)
+Number of elements: 16                     |Number of elements: 16
+Number of nodes: 14                        |Number of nodes: 14
+---------------------------------------------------------------------------------------
+Circuits match with 11 automorphisms.
+Graphs match with 11 automorphisms.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: dflipflop                       |Circuit 2: dflipflop
+-------------------------------------------|-------------------------------------------
+Q                                          |Q
+Qbar                                       |Qbar
+Vss                                        |Gnd
+En                                         |En
+Vdd                                        |Vdd
+D                                          |D
+Dbar                                       |Dbar
+Clk                                        |Clk
+---------------------------------------------------------------------------------------
+
+Subcircuit summary:
+Circuit 1: dflipflopsimple                 |Circuit 2: dflipflopsimple
+-------------------------------------------|-------------------------------------------
+pfet (5)                                   |pfet (5)
+nfet (4)                                   |nfet (4)
+Number of elements: 9                      |Number of elements: 9
+Number of nodes: 9                         |Number of nodes: 9
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Graphs match uniquely.
+
+Subcircuit pins:
+Circuit 1: dflipflopsimple                 |Circuit 2: dflipflopsimple
+-------------------------------------------|-------------------------------------------
+Q                                          |Qout
+Vss                                        |Gnd
+Vdd                                        |Vdd
+D                                          |D
+Dbar                                       |Dbar
+En                                         |En
+---------------------------------------------------------------------------------------
 
 Subcircuit summary:
 Circuit 1: bias                            |Circuit 2: bias
@@ -1551,7 +1601,34 @@ Net: V+n                                   |(no matching net)
 Graphs do not match.
   Flattening non-matched subcircuits amp amp
 Subcircuit summary:
-Circuit 1: amplifier/amplifier.net         |Circuit 2: amplifier/amplifier.spice
+Circuit 1: spi-interface                   |Circuit 2: spi-interface
+-------------------------------------------|-------------------------------------------
+dflipflop (4)                              |dflipflop (4)
+nfet (2)                                   |nfet (2)
+pfet (2)                                   |pfet (2)
+dflipflopsimple (4)                        |dflipflopsimple (4)
+Number of elements: 12                     |Number of elements: 12
+Number of nodes: 19                        |Number of nodes: 19
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Graphs match uniquely.
+
+Subcircuit pins:
+Circuit 1: spi-interface                   |Circuit 2: spi-interface
+-------------------------------------------|-------------------------------------------
+B3                                         |dflipflopsimple_0[0]/Qout
+B2                                         |dflipflopsimple_0[1]/Qout
+B1                                         |dflipflopsimple_0[2]/Qout
+B0                                         |dflipflopsimple_0[3]/Qout
+CSn                                        |(no matching pin)
+Vdd                                        |Vdd
+Vss                                        |Gnd
+MOSI                                       |(no matching pin)
+CLK                                        |(no matching pin)
+---------------------------------------------------------------------------------------
+  Flattening pin-mismatched subcircuits spi-interface spi-interface
+Subcircuit summary:
+Circuit 1: amplifier                       |Circuit 2: amplifier
 -------------------------------------------|-------------------------------------------
 bias (1)                                   |bias (1)
 nfet (107)                                 |nfet (107)
@@ -1564,7 +1641,277 @@ Circuits match with 4 automorphisms.
 Graphs match with 4 automorphisms.
 Circuits match correctly.
 There were property errors.
-ampX1/c3 vs. c0:
- value circuit1: 2e-12   circuit2: 2.0317e-12   (delta= 2%, cutoff= 1%)
-ampX1/c2 vs. c1:
+ampX1/c2 vs. c0:
  value circuit1: 2e-12   circuit2: 2.0315e-12   (delta= 2%, cutoff= 1%)
+ampX1/c3 vs. c1:
+ value circuit1: 2e-12   circuit2: 2.0317e-12   (delta= 2%, cutoff= 1%)
+
+Subcircuit pins:
+Circuit 1: amplifier                       |Circuit 2: amplifier
+-------------------------------------------|-------------------------------------------
+Vout                                       |c_791_n128#
+V-                                         |amp_0/V-
+V+                                         |(no matching pin)
+Vdd                                        |amp_0/Vdd
+Vss                                        |Gnd
+---------------------------------------------------------------------------------------
+  Flattening pin-mismatched subcircuits amplifier amplifier
+Subcircuit summary:
+Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level.spice
+-------------------------------------------|-------------------------------------------
+r (7)                                      |(no matching element)
+dflipflop (4)                              |dflipflop (4)
+nfet (113)                                 |nfet (113)
+pfet (109)                                 |pfet (109)
+dflipflopsimple (4)                        |dflipflopsimple (4)
+bias (1)                                   |bias (1)
+c (6)                                      |c (2) **Mismatch**
+(no matching element)                      |phrResistor (6)
+Number of elements: 244 **Mismatch**       |Number of elements: 239 **Mismatch**
+Number of nodes: 40 **Mismatch**           |Number of nodes: 47 **Mismatch**
+---------------------------------------------------------------------------------------
+ILLEGAL element partition: class fragments follow (with node fanout counts):
+Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level.spice
+
+---------------------------------------------------------------------------------------
+Instance: r4                               |Instance: /resistors_0/phrResistor1003
+  (end_a,end_b) = (4,4)                    |  (drain,source) = (3,3)
+                                           |  gate = 1
+                                           |  bulk = 10
+                                           |
+Instance: c1                               |Instance: /resistors_0/phrResistor1005
+  top = 3                                  |  (drain,source) = (4,2)
+  bottom = 232                             |  gate = 1
+                                           |  bulk = 10
+                                           |
+                                           |
+Instance: c2                               |(no matching instance)
+  top = 3                                  |
+  bottom = 232                             |
+                                           |
+Instance: c3                               |(no matching instance)
+  top = 3                                  |
+  bottom = 232                             |
+                                           |
+Instance: c4                               |(no matching instance)
+  top = 3                                  |
+  bottom = 232                             |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: /resistors_0/phrResistor1004
+                                           |  (drain,source) = (4,3)
+                                           |  gate = 1
+                                           |  bulk = 10
+                                           |
+                                           |
+(no matching instance)                     |Instance: /resistors_0/phrResistor1002
+                                           |  (drain,source) = (4,3)
+                                           |  gate = 1
+                                           |  bulk = 10
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: r6                               |(no matching instance)
+  (end_a,end_b) = (3,1)                    |
+                                           |
+                                           |
+Instance: rload                            |(no matching instance)
+  (end_a,end_b) = (232,103)                |
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: r5                               |(no matching instance)
+  (end_a,end_b) = (4,3)                    |
+                                           |
+                                           |
+Instance: r3                               |(no matching instance)
+  (end_a,end_b) = (4,4)                    |
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: /resistors_0/phrResistor1001
+                                           |  (drain,source) = (5,4)
+                                           |  gate = 1
+                                           |  bulk = 10
+                                           |
+                                           |
+(no matching instance)                     |Instance: /resistors_0/phrResistor1000
+                                           |  (drain,source) = (102,5)
+                                           |  gate = 1
+                                           |  bulk = 10
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: r2                               |(no matching instance)
+  (end_a,end_b) = (5,4)                    |
+                                           |
+                                           |
+Instance: r1                               |(no matching instance)
+  (end_a,end_b) = (103,5)                  |
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: spi-interfaceX1/dflipflopsimpleX |Instance: /spi-interface_0//dflipflopsimpl
+  En = 10                                  |  En = 10
+  D = 3                                    |  D = 3
+  Dbar = 3                                 |  Dbar = 3
+  Vdd = 223                                |  Vdd = 223
+  Vss = 232                                |  Gnd = 223
+  Q = 3                                    |  Qout = 2
+                                           |
+Instance: spi-interfaceX1/dflipflopsimpleX |Instance: /spi-interface_0//dflipflopsimpl
+  En = 10                                  |  En = 10
+  D = 3                                    |  D = 3
+  Dbar = 3                                 |  Dbar = 3
+  Vdd = 223                                |  Vdd = 223
+  Vss = 232                                |  Gnd = 223
+  Q = 3                                    |  Qout = 2
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nfet2                            |Instance: /resistors_0/nfet1009
+  (drain,source) = (4,4)                   |  (drain,source) = (4,2)
+  gate = 3                                 |  gate = 2
+  bulk = 232                               |  bulk = 10
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: /resistors_0/nfet1008
+                                           |  (drain,source) = (4,3)
+                                           |  gate = 2
+                                           |  bulk = 10
+                                           |
+                                           |
+(no matching instance)                     |Instance: /resistors_0/nfet1006
+                                           |  (drain,source) = (4,3)
+                                           |  gate = 2
+                                           |  bulk = 10
+                                           |
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nfet3                            |(no matching instance)
+  (drain,source) = (4,3)                   |
+  gate = 3                                 |
+  bulk = 232                               |
+                                           |
+                                           |
+Instance: nfet1                            |(no matching instance)
+  (drain,source) = (4,4)                   |
+  gate = 3                                 |
+  bulk = 232                               |
+                                           |
+---------------------------------------------------------------------------------------
+ILLEGAL node partition: class fragments follow (with fanout counts):
+Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level.spice
+
+---------------------------------------------------------------------------------------
+Net: Vout                                  |Net: /resistors_0/c_858_n1#
+  r/(end_a|end_b) = 2                      |  phrResistor/(drain|source) = 2
+  pfet/(drain|source) = 50                 |  nfet/(drain|source) = 2
+  nfet/(drain|source) = 50                 |
+  c/bottom = 1                             |
+                                           |
+Net: N002                                  |Net: /resistors_0/c_1238_n1#
+  r/(end_a|end_b) = 2                      |  phrResistor/(drain|source) = 2
+  nfet/(drain|source) = 2                  |  nfet/(drain|source) = 2
+                                           |
+Net: N005                                  |Net: amplifier_0/amp_0/Gnd
+  r/(end_a|end_b) = 2                      |  bias/Gnd = 1
+  nfet/(drain|source) = 1                  |  nfet/(drain|source) = 105
+                                           |  nfet/bulk = 109
+                                           |  dflipflop/Gnd = 4
+                                           |  dflipflopsimple/Gnd = 4
+                                           |
+Net: B0                                    |Net: B3
+  dflipflopsimple/Q = 1                    |  dflipflopsimple/Qout = 1
+  c/top = 1                                |  nfet/gate = 1
+  nfet/gate = 1                            |
+                                           |
+Net: B1                                    |Net: B0
+  dflipflopsimple/Q = 1                    |  dflipflopsimple/Qout = 1
+  c/top = 1                                |  nfet/gate = 1
+  nfet/gate = 1                            |
+                                           |
+Net: B2                                    |Net: /resistors_0/Vref
+  dflipflopsimple/Q = 1                    |  phrResistor/(drain|source) = 1
+  c/top = 1                                |  nfet/(drain|source) = 1
+  nfet/gate = 1                            |
+                                           |
+Net: B3                                    |Net: /resistors_0/c_978_n3#
+  dflipflopsimple/Q = 1                    |  phrResistor/gate = 1
+  c/top = 1                                |
+  nfet/gate = 1                            |
+                                           |
+Net: 0                                     |Net: /resistors_0/c_1248_n3#
+  dflipflop/Vss = 4                        |  phrResistor/gate = 1
+  nfet/(drain|source) = 105                |
+  nfet/bulk = 113                          |
+  dflipflopsimple/Vss = 4                  |
+  bias/Vss = 1                             |
+  c/bottom = 4                             |
+  r/(end_a|end_b) = 1                      |
+                                           |
+Net: Vref                                  |Net: Gnd
+  r/(end_a|end_b) = 1                      |  phrResistor/bulk = 6
+                                           |  nfet/bulk = 4
+                                           |
+(no matching net)                          |Net: resistors_0/Vout
+                                           |  pfet/(drain|source) = 50
+                                           |  nfet/(drain|source) = 50
+                                           |  c/bottom = 1
+                                           |  phrResistor/(drain|source) = 1
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: /resistors_0/c_1038_n3#
+                                           |  phrResistor/gate = 1
+                                           |
+(no matching net)                          |Net: /resistors_0/c_868_n3#
+                                           |  phrResistor/gate = 1
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: B1
+                                           |  dflipflopsimple/Qout = 1
+                                           |  nfet/gate = 1
+                                           |
+(no matching net)                          |Net: B2
+                                           |  dflipflopsimple/Qout = 1
+                                           |  nfet/gate = 1
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: /resistors_0/c_808_n3#
+                                           |  phrResistor/gate = 1
+                                           |
+(no matching net)                          |Net: /resistors_0/c_5_n3#
+                                           |  phrResistor/gate = 1
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: /resistors_0/c_1028_n1#
+                                           |  phrResistor/(drain|source) = 2
+                                           |  nfet/(drain|source) = 1
+                                           |
+(no matching net)                          |Net: /resistors_0/c_968_n1#
+                                           |  phrResistor/(drain|source) = 2
+                                           |  nfet/(drain|source) = 1
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: N004                                  |(no matching net)
+  r/(end_a|end_b) = 2                      |
+  nfet/(drain|source) = 2                  |
+                                           |
+Net: N003                                  |(no matching net)
+  r/(end_a|end_b) = 2                      |
+  nfet/(drain|source) = 2                  |
+---------------------------------------------------------------------------------------
+Graphs do not match.
