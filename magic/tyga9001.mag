@@ -1,7 +1,7 @@
 magic
 tech scmos
 magscale 1 3
-timestamp 1419143804
+timestamp 1419145638
 << nwell >>
 rect 4668 4263 4680 4275
 rect 4971 4203 5028 4281
@@ -821,9 +821,9 @@ timestamp 1259953556
 transform 0 1 0 -1 0 6789
 box -6 0 1428 1539
 use forrest-threshold  forrest-threshold_0
-timestamp 1419065237
+timestamp 1419145638
 transform 1 0 2226 0 1 4770
-box -54 -114 10979 7256
+box 45 78 10643 7457
 use inorpad  inorpad_0
 timestamp 1259953556
 transform 0 -1 15000 1 0 11055
