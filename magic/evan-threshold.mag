@@ -1,10 +1,7 @@
 magic
 tech scmos
 magscale 1 3
-timestamp 1419145638
-<< error_s >>
-rect 4294 815 4298 824
-rect 4303 805 4307 815
+timestamp 1419146600
 << metal1 >>
 rect 2074 7175 2104 7185
 rect 2034 7165 2134 7175
@@ -1573,7 +1570,7 @@ rect 3304 -5 4514 -3
 rect 2484 -15 2654 -5
 rect 3294 -15 4514 -5
 use erin-threshold  erin-threshold_0
-timestamp 1419065237
+timestamp 1419146600
 transform 1 0 3197 0 1 -721
-box 1086 763 4676 7286
+box 1134 718 4724 7241
 << end >>
