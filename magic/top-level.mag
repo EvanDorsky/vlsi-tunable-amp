@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1419286302
+timestamp 1419289501
 << nwell >>
 rect 766 603 770 607
 rect 766 599 769 600
@@ -8,7 +8,6 @@ rect 766 579 770 583
 rect 518 511 562 514
 rect 636 511 670 514
 << pwell >>
-rect 259 668 1252 698
 rect 553 648 585 668
 rect 753 618 756 619
 rect 761 613 762 614
@@ -87,9 +86,9 @@ rect 773 535 776 623
 rect 770 532 776 535
 rect 865 526 869 664
 use resistors  resistors_0
-timestamp 1419231588
+timestamp 1419289491
 transform -1 0 1688 0 -1 699
-box -11 -21 1656 35
+box -21 -26 1675 36
 use spi-interface  spi-interface_0
 timestamp 1419262457
 transform 0 1 502 -1 0 622
