@@ -7,7 +7,7 @@ def fix_resistors(netlist_path):
 	resistors = 0
 	with open(netlist_path, 'r') as netlist:
 		for line in netlist:
-			find_res = re.match(r"M(\d{4})(( \w+#?)+) phrResistor w=(\d+.\d+)u? l=(\d+.?\d+)u?", line)
+			find_res = re.match(r"M(\d{4})(( \w+#?)+) phrResistor w=(\d+.?\d+)u? l=(\d+.?\d+)u?", line)
 
 			if (find_res):
 				resistors+=1
