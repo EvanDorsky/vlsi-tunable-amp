@@ -3,7 +3,7 @@
 .global Vdd Gnd 
 
 .subckt bias Vbp Vdd Vcn Vcp Gnd Vbn
-R1000 Gnd M3source 4.0k
+M1000 Gnd c_100_n194# M3source Gnd phrResistor w=1.8u l=7.2u
 +  ad=3.78p pd=7.8u as=3.78p ps=7.8u
 M1001 Vdd Vbp Vcn Vdd pfet w=36u l=1.8u
 +  ad=164.16p pd=300.6u as=33.12p ps=75u

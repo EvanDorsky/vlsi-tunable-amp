@@ -66,6 +66,10 @@ M1005 Qbar Q a_n5_n142# Gnd nfet w=1.2u l=0.6u
 +  ad=0p pd=0u as=0p ps=0u
 M1006 a_n5_n142# En Gnd Gnd nfet w=1.2u l=0.6u
 +  ad=0p pd=0u as=0p ps=0u
+M1007 Gnd Qbar Qout Gnd nfet w=1.2u l=0.6u
++  ad=0p pd=0u as=0p ps=0u
+M1008 Vdd Qbar Qout Vdd pfet w=1.2u l=0.6u
++  ad=0p pd=0u as=0p ps=0u
 .ends
 
 
