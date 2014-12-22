@@ -4,3 +4,4 @@
 *.plt
 
 *.ext
+magic/*.spice
