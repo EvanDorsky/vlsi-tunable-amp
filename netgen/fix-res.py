@@ -1,4 +1,5 @@
 import re, sys
+import shutil, os
 
 def fix_resistors(netlist_path):
 	newfile_name = netlist_path[:-6]+"-fixed.spice"
@@ -22,6 +23,9 @@ def fix_resistors(netlist_path):
 
 			fixed.write(line)
 	fixed.close()
+	os.remove(netlist_path)
+	shutil.move(newfile_name, netlist_path)
+
 	print "Fixed",resistors,("resistor." if resistors == 1 else "resistors.")
 
 if (__name__ == "__main__"):
