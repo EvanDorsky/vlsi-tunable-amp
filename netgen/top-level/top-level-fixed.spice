@@ -3,7 +3,7 @@
 .global Vdd Gnd 
 
 .subckt bias Vbp Vdd Vcn Vcp Gnd Vbn
-M1000 Gnd c_100_n194# M3source Gnd phrResistor w=1.8u l=7.2u
+R1000 Gnd M3source 4.0k
 +  ad=3.78p pd=7.8u as=3.78p ps=7.8u
 M1001 Vdd Vbp Vcn Vdd pfet w=36u l=1.8u
 +  ad=164.16p pd=300.6u as=33.12p ps=75u
@@ -569,17 +569,17 @@ Xdflipflopsimple_0[3] Vdd Gnd dflipflop_0[0]/Q inverter_1/Z dflipflop_0[0]/Qbar 
 .ends
 
 .subckt resistors B1 B2 B3 c_n11_n1# r1 B0
-M1000 r1 c_n3_n3# c_n11_n1# Gnd phrResistor w=1.5u l=240u
+R1000 r1 c_n11_n1# 160.0k
 +  ad=5.49p pd=10.2u as=4.14p ps=8.4u
-M1001 r2 c_808_n3# r1 Gnd phrResistor w=1.5u l=15u
+R1001 r2 r1 10.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
-M1002 r3 c_868_n3# r2 Gnd phrResistor w=1.5u l=30u
+R1002 r3 r2 20.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
-M1003 r6 c_978_n3# r3 Gnd phrResistor w=1.5u l=15u
+R1003 r6 r3 10.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
-M1004 r4 c_1038_n3# r6 Gnd phrResistor w=1.5u l=60u
+R1004 r4 r6 40.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
-M1005 c_1648_n1# c_1248_n3# r4 Gnd phrResistor w=1.5u l=120u
+R1005 c_1648_n1# r4 80.0k
 +  ad=4.14p pd=8.4u as=0p ps=0u
 M1006 r2 B1 r3 Gnd nfet w=49.5u l=0.6u
 +  ad=93.06p pd=208.2u as=45.27p ps=102u
