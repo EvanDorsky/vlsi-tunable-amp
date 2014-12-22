@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1419261862
+timestamp 1419286302
 << nwell >>
 rect 766 603 770 607
 rect 766 599 769 600
@@ -91,13 +91,13 @@ timestamp 1419231588
 transform -1 0 1688 0 -1 699
 box -11 -21 1656 35
 use spi-interface  spi-interface_0
-timestamp 1418856619
+timestamp 1419262457
 transform 0 1 502 -1 0 622
 box -27 -21 108 279
 use amplifier  amplifier_0
-timestamp 1418878488
-transform 1 0 781 0 1 394
-box -781 -394 952 261
+timestamp 1419285127
+transform 1 0 0 0 1 0
+box 0 0 1733 655
 << labels >>
 rlabel metal2 765 634 768 636 1 B0
 rlabel metal2 759 634 762 636 1 B1
