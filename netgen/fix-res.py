@@ -22,7 +22,7 @@ def fix_resistors(netlist_path):
 
 			fixed.write(line)
 	fixed.close()
-	print "Fixed",resistors,"resistors."
+	print "Fixed",resistors,("resistor." if resistors == 1 else "resistors.")
 
 if (__name__ == "__main__"):
 	fix_resistors(sys.argv[1])
