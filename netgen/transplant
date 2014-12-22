@@ -1,0 +1,4 @@
+rm -rf ../magic/*.ext
+mv ../magic $1.spice $1
+python fix-res.py $1/$1.spice
+zsh netcmp $1/$1.net $1/$1.spice
