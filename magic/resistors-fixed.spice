@@ -1,0 +1,23 @@
+* SPICE3 file created from resistors.ext - technology: scmos
+
+R1000 r1 Vout 158.4k
++  ad=5.49p pd=10.2u as=4.14p ps=8.4u
+R1001 r2 r1 10.0k
++  ad=5.04p pd=9.6u as=0p ps=0u
+R1002 r3 r2 20.0k
++  ad=5.04p pd=9.6u as=0p ps=0u
+R1003 r6 r3 10.0k
++  ad=5.04p pd=9.6u as=0p ps=0u
+R1004 r4 r6 40.0k
++  ad=5.04p pd=9.6u as=0p ps=0u
+R1005 Vref r4 80.0k
++  ad=4.14p pd=8.4u as=0p ps=0u
+M1006 r2 B1 r3 Gnd nfet w=49.5u l=0.6u
++  ad=93.06p pd=208.2u as=45.27p ps=102u
+M1007 r2 B0 r1 Gnd nfet w=49.5u l=0.6u
++  ad=0p pd=0u as=45.27p ps=102u
+M1008 r6 B2 r4 Gnd nfet w=49.5u l=0.6u
++  ad=45.27p pd=102u as=90.54p ps=204u
+M1009 r4 B3 Vref Gnd nfet w=49.5u l=0.6u
++  ad=0p pd=0u as=45.27p ps=102u
+C0 r1 r3 3.8fF
