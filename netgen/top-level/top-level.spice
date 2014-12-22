@@ -431,7 +431,7 @@ M1212 c_791_n128# Vout_not Gnd Gnd nfet w=72u l=1.8u
 +  ad=0p pd=0u as=0p ps=0u
 M1213 Gnd Vout_not c_791_n128# Gnd nfet w=72u l=1.8u
 +  ad=0p pd=0u as=0p ps=0u
-C0 Vout_not a_n781_n137# 2031.5fF
+C0 a_n781_n137# Vout_not 2031.5fF
 C1 c_791_n128# a_32_135# 2031.7fF
 .ends
 
@@ -568,8 +568,8 @@ Xdflipflopsimple_0[2] Vdd Gnd dflipflop_0[1]/Q inverter_1/Z dflipflop_0[1]/Qbar 
 Xdflipflopsimple_0[3] Vdd Gnd dflipflop_0[0]/Q inverter_1/Z dflipflop_0[0]/Qbar dflipflopsimple_0[3]/Qout dflipflopsimple
 .ends
 
-.subckt resistors B1 B2 B3 c_n11_n1# r1 B0
-R1000 r1 c_n11_n1# 160.0k
+.subckt resistors B1 B2 B3 w_n21_n26# r1 Vout B0
+R1000 r1 Vout 160.0k
 +  ad=5.49p pd=10.2u as=4.14p ps=8.4u
 R1001 r2 r1 10.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
@@ -579,23 +579,23 @@ R1003 r6 r3 10.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
 R1004 r4 r6 40.0k
 +  ad=5.04p pd=9.6u as=0p ps=0u
-R1005 c_1648_n1# r4 80.0k
+R1005 Vref r4 80.0k
 +  ad=4.14p pd=8.4u as=0p ps=0u
-M1006 r2 B1 r3 Gnd nfet w=49.5u l=0.6u
+M1006 r2 B1 r3 w_n21_n26# nfet w=49.5u l=0.6u
 +  ad=93.06p pd=208.2u as=45.27p ps=102u
-M1007 r2 B0 r1 Gnd nfet w=49.5u l=0.6u
+M1007 r2 B0 r1 w_n21_n26# nfet w=49.5u l=0.6u
 +  ad=0p pd=0u as=45.27p ps=102u
-M1008 r6 B2 r4 Gnd nfet w=49.5u l=0.6u
+M1008 r6 B2 r4 w_n21_n26# nfet w=49.5u l=0.6u
 +  ad=45.27p pd=102u as=90.54p ps=204u
-M1009 r4 B3 c_1648_n1# Gnd nfet w=49.5u l=0.6u
+M1009 r4 B3 Vref w_n21_n26# nfet w=49.5u l=0.6u
 +  ad=0p pd=0u as=45.27p ps=102u
 .ends
 
 
 * Top level circuit top-level
 
-Xamplifier_0 resistors_0/r1 spi-interface_0/Vdd spi-interface_0/dflipflopsimple_0[0]/Gnd m1_1686_268# spi-interface_0/dflipflop_0[0]/Vdd amplifier
+Xamplifier_0 resistors_0/r1 spi-interface_0/Vdd spi-interface_0/dflipflopsimple_0[0]/Gnd resistors_0/Vout spi-interface_0/dflipflop_0[0]/Vdd amplifier
 Xspi-interface_0 spi-interface_0/Vdd B2 spi-interface_0/dflipflopsimple_0[0]/Gnd spi-interface_0/Vdd spi-interface_0/Gnd B3 B0 B1 spi-interface_0/dflipflop_0[0]/Vdd spi-interface_0/dflipflopsimple_0[0]/Gnd spi-interface
-Xresistors_0 B1 B2 B3 m1_1686_268# resistors_0/r1 B0 resistors
+Xresistors_0 B1 B2 B3 spi-interface_0/Gnd resistors_0/r1 resistors_0/Vout B0 resistors
 .end
 

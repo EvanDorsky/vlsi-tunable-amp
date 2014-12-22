@@ -1,6 +1,6 @@
 Flattening unmatched subcell invinverter in circuit spi-interface
 Flattening unmatched subcell inverter in circuit spi-interface
-Flattening unmatched subcell resistors in circuit top-level/top-level-fixed.spice
+Flattening unmatched subcell resistors in circuit top-level/top-level.spice
                                                                     
 Subcircuit summary:
 Circuit 1: dflipflop                       |Circuit 2: dflipflop                       
@@ -89,10 +89,6 @@ Circuit 1: amp                             |Circuit 2: amp
 Instance: c3                               |Instance: c1                               
   top = 53                                 |  top = 101                                
   bottom = 101                             |  bottom = 53                              
-                                           |                                           
-Instance: c2                               |Instance: c0                               
-  top = 55                                 |  top = 201                                
-  bottom = 201                             |  bottom = 55                              
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -1358,15 +1354,11 @@ Circuit 1: amplifier                       |Circuit 2: amplifier
 Instance: ampX1/c3                         |Instance: /amp_0/c1                        
   top = 53                                 |  top = 101                                
   bottom = 101                             |  bottom = 53                              
-                                           |                                           
-Instance: ampX1/c2                         |Instance: /amp_0/c0                        
-  top = 55                                 |  top = 201                                
-  bottom = 201                             |  bottom = 55                              
 ---------------------------------------------------------------------------------------
 Graphs do not match.
   Flattening non-matched subcircuits amplifier amplifier                                                                                                                                                                                                                          
 Subcircuit summary:
-Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level-fixed.spice 
+Circuit 1: top-level/top-level.net         |Circuit 2: top-level/top-level.spice       
 -------------------------------------------|-------------------------------------------
 r (6)                                      |r (6)                                      
 dflipflop (4)                              |dflipflop (4)                              
@@ -1376,36 +1368,14 @@ dflipflopsimple (4)                        |dflipflopsimple (4)
 bias (1)                                   |bias (1)                                   
 c (2)                                      |c (2)                                      
 Number of elements: 239                    |Number of elements: 239                    
-Number of nodes: 40 **Mismatch**           |Number of nodes: 41 **Mismatch**           
+Number of nodes: 40                        |Number of nodes: 40                        
 ---------------------------------------------------------------------------------------
 ILLEGAL element partition: class fragments follow (with node fanout counts):
-Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level-fixed.spice 
+Circuit 1: top-level/top-level.net         |Circuit 2: top-level/top-level.spice       
 
 ---------------------------------------------------------------------------------------
 Instance: amplifierAmp/ampX1/c3            |Instance: /amplifier_0//amp_0/c1           
   top = 53                                 |  top = 102                                
   bottom = 102                             |  bottom = 53                              
-                                           |                                           
-Instance: amplifierAmp/ampX1/c2            |Instance: /amplifier_0//amp_0/c0           
-  top = 55                                 |  top = 201                                
-  bottom = 201                             |  bottom = 55                              
----------------------------------------------------------------------------------------
-ILLEGAL node partition: class fragments follow (with fanout counts):
-Circuit 1: top-level/spi-interface-test.ne |Circuit 2: top-level/top-level-fixed.spice 
-
----------------------------------------------------------------------------------------
-Net: 0                                     |Net: Gnd                                   
-  dflipflop/Vss = 4                        |  nfet/bulk = 4                            
-  nfet/(drain|source) = 105                |                                           
-  nfet/bulk = 113                          |                                           
-  dflipflopsimple/Vss = 4                  |                                           
-  bias/Vss = 1                             |                                           
-                                           |                                           
-(no matching net)                          |Net: spi-interface_0/Gnd                   
-                                           |  nfet/(drain|source) = 105                
-                                           |  nfet/bulk = 109                          
-                                           |  bias/Gnd = 1                             
-                                           |  dflipflop/Gnd = 4                        
-                                           |  dflipflopsimple/Gnd = 4                  
 ---------------------------------------------------------------------------------------
 Graphs do not match.
