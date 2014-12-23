@@ -1,7 +1,7 @@
 magic
 tech scmos
 magscale 1 3
-timestamp 1419299548
+timestamp 1419308272
 << nwell >>
 rect 4668 4263 4680 4275
 rect 4971 4203 5028 4281
@@ -767,7 +767,7 @@ rect 4635 1902 4638 1923
 rect 4674 1902 12711 1923
 rect 12744 1902 12747 1923
 rect 4635 1899 12747 1902
-use barepad  barepad_1
+use inorpad  inorpad_23
 timestamp 1259953556
 transform -1 0 2523 0 -1 15000
 box -6 0 1428 1539
@@ -799,7 +799,7 @@ use inorpad  inorpad_3
 timestamp 1259953556
 transform -1 0 12477 0 -1 15000
 box -6 0 1428 1539
-use barepad  barepad_0
+use inorpad  inorpad_24
 timestamp 1259953556
 transform -1 0 13899 0 -1 15000
 box -6 0 1428 1539
@@ -807,7 +807,7 @@ use padframe_top  padframe_top_0
 timestamp 1259953556
 transform 1 0 0 0 1 13461
 box 0 0 15000 1539
-use barepad  barepad_2
+use inorpad  inorpad_22
 timestamp 1259953556
 transform 0 1 0 -1 0 13899
 box -6 0 1428 1539
@@ -887,11 +887,11 @@ use padframe_left  padframe_left_0
 timestamp 1259953556
 transform 1 0 0 0 1 1101
 box 6 6 1539 12792
-use barepad  barepad_4
+use inorpad  inorpad_21
 timestamp 1259953556
 transform 0 1 0 -1 0 2523
 box -6 0 1428 1539
-use barepad  barepad_3
+use inorpad  inorpad_20
 timestamp 1259953556
 transform 1 0 1101 0 1 0
 box -6 0 1428 1539
